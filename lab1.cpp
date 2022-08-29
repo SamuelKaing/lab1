@@ -268,7 +268,6 @@ void render()
 		glPushMatrix(); 
 		//color
 		//if xres changes, change color
-#ifdef METHOD1
 		glColor3ub(0, 0, 230);
 		if (g.xres < 600) {
 			glColor3ub(255, 0, 255);
@@ -282,7 +281,6 @@ void render()
 						glColor3ub(230, 0, 38);
 					}
 		}
-#endif
 		glTranslatef(g.pos[0], g.pos[1], 0.0f);
 		glBegin(GL_QUADS);
 			glVertex2f(-g.w, -g.w);
